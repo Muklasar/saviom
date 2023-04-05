@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+    <!-- <div>Parent Div</div> -->
+    <div class="parent">
+        <div>DIV 1</div>
+        <div>DIV 2</div>
+        <div>DIV 3</div>
+    </div>
+</body>
+<style>
+    .parent{
+        border: 2px solid #000000;
+        padding: 2rem;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .parent > div{  
+        height: 500px;
+        width: 200px;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        margin-bottom: 2rem;
+        font-family: sans-serif;
+    }
+    .parent :first-child{
+        background-color: red;
+    }
+    .parent :nth-child(2){
+        background-color: blue;
+    }
+    .parent :last-child{
+        background-color: green;
+    }
+</style>
+</html>
